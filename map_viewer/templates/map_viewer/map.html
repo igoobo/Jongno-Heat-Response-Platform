@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geojson</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>	
+	<script type="text/javascript" src="https://sgisapi.kostat.go.kr/OpenAPI3/auth/javascriptAuth?consumer_key=5ab5cd5d2f0443119372"></script>
+    
+    <!-- 정적 파일 로딩 -->
+    <link rel="stylesheet" href="{% static 'map_viewer/css/style.css' %}">
+    <script src="{% static 'map_viewer/js/script.js' %}"></script>
+
+</head>
+<body>
+  <div id="map"></div>
+</body>
+
+</html>
